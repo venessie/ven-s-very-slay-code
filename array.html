@@ -1,0 +1,31 @@
+<head>
+
+</head>
+<body>
+    <p id = "demo"></p>
+    <p id = "demure"></p>
+    <p id = "mindful"></p>
+    <p id = "cutesy"></p>
+    <p id = "slay"></p>
+
+   <script>
+    var array = ["Member","Alternate Officer","Lawyer","Operator","Co-Leader","Leader"]
+    document.getElementById("demo").innerHTML = array
+    document.getElementById("demure").innerHTML = array.join("@")
+    document.getElementById("mindful").innerHTML = array.pop()
+    document.getElementById("cutesy").innerHTML = array
+
+
+
+
+
+    function add(a,b){
+      return a + b
+    }
+    function average(a,b){
+      return add(a,b)/2
+    }
+   let result = average(34,90)
+   document.getElementById("slay").innerHTML = result
+    </script>
+</body>
