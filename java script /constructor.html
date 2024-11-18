@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id = "demo"></p>
+        <p>HAIII</p>
+        <script>
+        class student {
+            constructor(name,year){
+                    this.name = name;
+                    this.year = year;
+                    
+                }
+        age(){
+            let date = new Date();
+            return date.getFullYear()-this.year();
+
+        }
+            }
+            
+        ob1 = new student("Venini",2013);
+        document.getElementById("demo").innerHTML = "My name is " + ob1.name + "My year is" + ob1.year    
+        </script>
+        </body>
+</html>
