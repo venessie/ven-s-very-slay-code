@@ -1,0 +1,44 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    <p id = "demo"></p>
+    <p id = "demo1"></p>
+    <p id = "error_message"></p>
+    <button onclick = "myFunction()">CLICK ME</button>
+    <p id = "forty_five"></p>
+    <p id = "result"></p>
+
+        <script>
+            var x  = 70
+            var y = 90
+            document.getElementById("demo").innerHTML = x+y
+            document.getElementById("demo1").innerHTML = String (x) + String (y)
+
+
+
+
+            try {
+            }
+            catch(err) {
+                document.getElementById("error_message").innerHTML = err.message;
+            }
+
+
+        function myFunction() {
+            var x = 45;
+            var y = 45;
+            document.getElementById("forty_five").innerHTML = x*y;
+        }
+
+
+
+        add = (a,b) => a+b;
+        document.getElementById("result").innerHTML = add(12,14);         addalert("Welcome guest!")
+     
+
+
+        </script>
+    </body>
+</html>
