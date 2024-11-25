@@ -1,0 +1,73 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id ="result"></p>
+        <p id = "result1"></p>
+        <p id = "result2"></p>
+        <p id = "result3"></p>
+        <p id = "result4"></p>
+        <script>
+            var myObj = { name: "Fifi", age: 11, grade: "6-3"};
+            var myObj = JSON.stringify(myObj);
+            var newObj = JSON.parse(myObj);
+            document.getElementById("result").innerHTML = newObj.name + newObj.age + newObj.grade
+        
+
+
+
+
+
+
+
+
+
+
+            async function add(a,b)  {
+                let response = await a + b;
+                display(response);
+            }
+            function display(some) {
+                document.getElementById("result1").innerHTML = some;
+            }
+            add(20,4)
+
+
+            async function sub(a,b)  {
+                let response = await a - b;
+                display1(response);
+            }
+            function display1(some) {
+                document.getElementById("result2").innerHTML = some;
+            }
+             sub(20,4)
+             
+             
+
+
+
+
+
+             function myDisplayer(value)  {
+                document.getElementById("result3").innerHTML = value;
+             }
+             function myCalculator(num1, num2, myCallback) {
+                let sum = num1 + num2;
+                myCallback(sum);
+             }
+             myCalculator(5, 5, myDisplayer);
+              
+
+             function myDisplayer1(value)  {
+                document.getElementById("result4").innerHTML = value;
+             }
+             function myCalculator1(num1, num2, myCallback)   {
+                let mul = num1 * num2
+                myCallback(mul);
+             }
+             myCalculator1(3, 5, myDisplayer1);
+        </script>
+        </script>
+    </body>
+</html>
